@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎂 Age Calculator</h1>
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" id="dob" />
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select id="gender">
+          <option value="">-- Select Gender --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="consent" />
+          I agree to save my information in Excel.
+        </label>
+      </div>
+      <button type="button" id="calculateBtn" onclick="calculateAge()">
+        Calculate Age
+      </button>
+
+      <div class="result" id="result" style="display: none">
+        <h2 id="ageText"></h2>
+        <p id="detailText"></p>
+        <span id="savedMsg" class="saved-msg"></span>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
